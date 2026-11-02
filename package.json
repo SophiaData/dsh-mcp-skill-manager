@@ -1,5 +1,5 @@
 {
-  "name": "dsh-mcp-skill-manager",
+  "name": "@sophiadata-ai/dsh-mcp-skill-manager",
   "version": "0.10.0",
   "description": "DeepSeek Harness plugin for managing MCP servers, tool guards, and skill files",
   "type": "module",
@@ -13,6 +13,9 @@
     "./icon": "./icon.svg"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "index.js",
     "discovery.js",

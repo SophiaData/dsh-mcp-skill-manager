@@ -19,10 +19,10 @@ DeepSeek Harness（DSH）插件：在 **Settings → MCP & Skills** 里新增、
 
 ### 桌面版（Electron）
 
-在 DSH 的插件管理器里添加 Bundle：
+在 DSH 的插件管理器里添加 Bundle，输入包名：
 
 ```text
-https://codeload.github.com/gtk96/dsh-mcp-skill-manager/tar.gz/refs/heads/main
+@sophiadata-ai/dsh-mcp-skill-manager
 ```
 
 桌面版的 Profile 是 `desktop`，由 Electron 管理，**不要**用下面的 CLI 命令向它安装。
@@ -30,10 +30,10 @@ https://codeload.github.com/gtk96/dsh-mcp-skill-manager/tar.gz/refs/heads/main
 ### CLI 管理的 Profile
 
 ```sh
-dsh plugin --profile web add "https://codeload.github.com/gtk96/dsh-mcp-skill-manager/tar.gz/refs/heads/main" --registry https://registry.npmjs.org/
+dsh plugin --profile web add @sophiadata-ai/dsh-mcp-skill-manager
 ```
 
-把 `web` 换成目标 Profile。使用 HTTPS 源码包可以避开 Git/SSH 的 `Host key verification failed`。
+把 `web` 换成目标 Profile。
 
 安装后如返回 `restart-required`，重启 DSH 才会生效；插件本身不会重启应用或停止正在运行的任务。
 

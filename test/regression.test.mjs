@@ -448,7 +448,7 @@ async function page(t, host, options = {}) {
   };
   const sandbox = {
     window: { __ModuleLoader__: { load: (loaded) => {
-      assert.equal(loaded.id, "dsh-mcp-skill-manager");
+      assert.equal(loaded.id, "@sophiadata-ai/dsh-mcp-skill-manager");
       exports = loaded.factory((id) => { assert.equal(id, "react"); return React; });
     } } },
     document,

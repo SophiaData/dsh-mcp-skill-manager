@@ -1,4 +1,4 @@
-window.__ModuleLoader__.load({ id: "dsh-mcp-skill-manager", factory: (require) => {
+window.__ModuleLoader__.load({ id: "@sophiadata-ai/dsh-mcp-skill-manager", factory: (require) => {
 var module = { exports: {} }; var exports = module.exports;
 const React = require("react");
 const h = React.createElement;
