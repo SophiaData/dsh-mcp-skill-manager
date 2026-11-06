@@ -2,7 +2,7 @@
 
 DeepSeek Harness（DSH）插件：在 **Settings → MCP & Skills** 里新增、编辑、删除、启用/禁用 MCP Server，管理本机 Skill 文件，并停用单个 MCP 工具的调用。
 
-官方 DSH 0.2.1-rc.2 **没有** MCP 设置页，也没有管理 MCP 的 CLI；不装这个插件时，MCP Server 只能手改 Profile 的 `cordis.patch.yml`。
+官方 DSH（至 0.2.2-rc.1）**没有** MCP 设置页，也没有管理 MCP 的 CLI；不装这个插件时，MCP Server 只能手改 Profile 的 `cordis.patch.yml`。
 
 ## 能做什么
 
@@ -15,7 +15,7 @@ DeepSeek Harness（DSH）插件：在 **Settings → MCP & Skills** 里新增、
 
 ## 安装
 
-插件要求 DSH `^0.2.0-rc.2 || ^0.2.1-rc.2`。已做隔离回归的版本是 `0.2.0-rc.2` 与 `0.2.1-rc.2`；其它版本仍可读取，但写入会被禁用（见「兼容性」）。
+插件要求 DSH `^0.2.0-rc.2 || ^0.2.1-rc.2 || ^0.2.2-rc.1`。已做隔离回归的版本是 `0.2.0-rc.2`、`0.2.1-rc.2` 与 `0.2.2-rc.1`；其它版本仍可读取，但写入会被禁用（见「兼容性」）。
 
 ### 桌面版（Electron）
 

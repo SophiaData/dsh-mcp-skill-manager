@@ -1,6 +1,6 @@
 {
   "name": "@sophiadata-ai/dsh-mcp-skill-manager",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "DeepSeek Harness plugin for managing MCP servers, tool guards, and skill files",
   "type": "module",
   "main": "./index.js",
@@ -51,9 +51,9 @@
     "url": "https://github.com/gtk96/dsh-mcp-skill-manager.git"
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh": "^0.2.0-rc.2 || ^0.2.1-rc.2",
-    "@deepseek-ai/dsh-mcp-client": "^0.2.0-rc.2 || ^0.2.1-rc.2",
-    "@deepseek-ai/dsh-atomic-write": "^0.2.0-rc.2 || ^0.2.1-rc.2"
+    "@deepseek-ai/dsh": "^0.2.0-rc.2 || ^0.2.1-rc.2 || ^0.2.2-rc.1",
+    "@deepseek-ai/dsh-mcp-client": "^0.2.0-rc.2 || ^0.2.1-rc.2 || ^0.2.2-rc.1",
+    "@deepseek-ai/dsh-atomic-write": "^0.2.0-rc.2 || ^0.2.1-rc.2 || ^0.2.2-rc.1"
   },
   "peerDependenciesMeta": {
     "@deepseek-ai/dsh": {

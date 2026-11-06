@@ -221,7 +221,7 @@ await check('Both optional DSH peers accept the verified baselines', async () =>
   for (const name of ['@deepseek-ai/dsh', '@deepseek-ai/dsh-mcp-client', '@deepseek-ai/dsh-atomic-write']) {
     const range = manifest.peerDependencies[name];
     assert.ok(range, name);
-    for (const version of ['0.2.0-rc.2', '0.2.1-rc.2', '0.2.1-rc.3']) assert.equal(semver.satisfies(version, range), true, `${name}: ${version}`);
+    for (const version of ['0.2.0-rc.2', '0.2.1-rc.2', '0.2.1-rc.3', '0.2.2-rc.1']) assert.equal(semver.satisfies(version, range), true, `${name}: ${version}`);
     assert.equal(semver.satisfies('0.1.9', range), false);
     assert.equal(manifest.peerDependenciesMeta[name].optional, true);
   }

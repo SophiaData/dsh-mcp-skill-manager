@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 const manifest = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
 
 /** Runtime versions this plugin has an isolated regression for. */
-export const testedRuntimeVersions = Object.freeze(['0.2.0-rc.2', '0.2.1-rc.2']);
+export const testedRuntimeVersions = Object.freeze(['0.2.0-rc.2', '0.2.1-rc.2', '0.2.2-rc.1']);
 
 export class CompatibilityError extends Error {}
 

@@ -33,7 +33,7 @@ await check('Compatibility reports version and methods without invoking business
   assert.equal(host.profile.trace.edits + host.trace.registrations + host.trace.snapshots.length, 0);
 });
 
-for (const version of ['0.2.0-rc.2', '0.2.1-rc.2']) {
+for (const version of ['0.2.0-rc.2', '0.2.1-rc.2', '0.2.2-rc.1']) {
   await check(`Verified runtime ${version} permits MCP writes and Runtime Skill operations`, async (t) => {
     runtimeVersion(t, version);
     const host = await fixture(probe());
